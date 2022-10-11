@@ -5,7 +5,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faEye } from '@fortawesome/free-solid-svg-icons'
 
-const EachQuestion = ({ Question }) => {
+const EachQuestion = ({ Question, index }) => {
+    console.log(index);
     const { options, id, question, correctAnswer } = Question;
     console.log(correctAnswer);
     console.log(Question)
@@ -32,7 +33,7 @@ const EachQuestion = ({ Question }) => {
         <div className='quiz'>
             <div className='name-icon'>
                 <div>
-                    <h3>{question}</h3>
+                    <h3>{index + 1}.{question}</h3>
                 </div>
                 <div >
                     <button onClick={() => rightAnswer(correctAnswer)} className='icon'><FontAwesomeIcon icon={faEye}></FontAwesomeIcon></button>
@@ -41,9 +42,12 @@ const EachQuestion = ({ Question }) => {
             <div >
 
                 {
-                    options.map(option => <div onClick={() => radioButtoValue(option)} className='options'> <input type="radio" id="html" name={id} value={option} />{option}</div>)
+                    options.map(option => <div onClick={() => radioButtoValue(option)} className='options'><label>  <input type="radio" id="html" name={id} value={option} /> {option} </label> </div>)
 
                 }
+                {/* {
+                    options.map(option => <div onClick={() => radioButtoValue(option)} className='options'> <input type="radio" id="html" name={id} value={option} />{option}</div>)
+                } */}
 
                 < ToastContainer />
 

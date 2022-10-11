@@ -5,7 +5,7 @@ import EachQuestion from '../EachQuestion/EachQuestion';
 const QuizDetails = () => {
     const Quizs = useLoaderData().data;
     const Questions = Quizs.questions;
-    console.log(Questions)
+    console.log(Questions.id)
     // console.log(Quizs)
     // console.log(Questions);
 
@@ -15,9 +15,12 @@ const QuizDetails = () => {
         <div>
             <h2>Quiz of {Quizs.name}</h2>
             {
-                Questions.map(Question => <EachQuestion
+                Questions.map((Question, index) => <EachQuestion
                     key={Question.id}
                     Question={Question}
+                    index={index}
+
+
                 >
 
 
