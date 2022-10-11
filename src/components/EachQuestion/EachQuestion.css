@@ -1,0 +1,11 @@
+.quiz {
+    padding: 20px;
+    border: 2px solid lightblue;
+    margin: 10px;
+    background-color: whitesmoke
+}
+
+.options {
+    padding: 5px;
+    font-size: 20px;
+}
