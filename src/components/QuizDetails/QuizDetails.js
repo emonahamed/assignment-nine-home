@@ -19,8 +19,6 @@ const QuizDetails = () => {
                     key={Question.id}
                     Question={Question}
                     index={index}
-
-
                 >
 
 

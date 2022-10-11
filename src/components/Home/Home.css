@@ -23,4 +23,51 @@
 
 .image-intro h4 {
     color: rebeccapurple;
+
+}
+
+
+@media screen and (max-width:767px) {
+    .image-intro {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 20px;
+
+    }
+
+    .image-intro div {
+        margin: 20px;
+
+    }
+
+    .full-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+
+    }
+
+
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .image-intro {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .full-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+
+    }
+
+
+
 }
