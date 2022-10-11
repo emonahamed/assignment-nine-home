@@ -6,7 +6,7 @@ const Card = ({ home }) => {
     console.log(home)
     const { id, name, logo, total } = home;
     return (
-        <div className='full-card'>
+        <div>
             <div className='card'>
                 <img src={logo} alt="" />
                 <h3>Name: {name}</h3>

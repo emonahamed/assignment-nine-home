@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import Card from '../Card/Card';
 import Header from '../Header/Header';
 import './Home.css'
+import boy from '../../boy.jpg'
 
 const Home = () => {
     const home = useLoaderData();
@@ -10,6 +11,17 @@ const Home = () => {
     console.log(homes)
     return (
         <div>
+            <div className='image-intro'>
+                <div>
+                    <img src={boy} alt="" />
+                </div>
+                <div >
+                    <h4>Want to test yourself.... just dive into the Quiz section  :)</h4>
+                </div>
+
+
+            </div>
+
             <div className='full-card'>
 
                 {
@@ -21,10 +33,6 @@ const Home = () => {
                     ></Card>)
                 }
             </div>
-
-
-
-
         </div>
     );
 };

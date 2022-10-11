@@ -3,15 +3,18 @@
     margin-right: 15px;
     padding: 2px 5px;
     font-size: 30px;
+    color: teal;
 
 
 }
 
 .header a:hover {
-    background-color: lightgoldenrodyellow;
+    background-color: purple;
 }
 
 .header {
     height: 100px;
-    background-color: antiquewhite;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
 }

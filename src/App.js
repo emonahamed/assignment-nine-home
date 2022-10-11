@@ -27,10 +27,7 @@ function App() {
           element: <Home></Home>
         },
 
-        {
-          path: '/topics',
-          element: <Topics></Topics>
-        },
+
         {
           path: '/blog',
           element: <Blog></Blog>
