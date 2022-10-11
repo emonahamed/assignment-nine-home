@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 import Header from '../Header/Header';
 
 const Statics = () => {
@@ -10,9 +11,14 @@ const Statics = () => {
 
     return (
         <div>
+            <LineChart width={500} height={400} data={statics}>
+                <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+                <XAxis dataKey="name" />
+                <YAxis />
+                <Tooltip></Tooltip>
 
 
-            <h4>this is statistics</h4>
+            </LineChart>
         </div>
     );
 };
