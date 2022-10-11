@@ -8,4 +8,19 @@
 .options {
     padding: 5px;
     font-size: 20px;
+    width: 25%;
+    margin: 0 auto;
+
+}
+
+.name-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon {
+    color: lightsalmon;
+    border: none;
 }
