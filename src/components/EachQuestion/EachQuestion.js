@@ -4,6 +4,17 @@ import './EachQuestion.css'
 const EachQuestion = ({ Question }) => {
     const { options, id, question, correctAnswer } = Question;
     console.log(Question)
+
+    const radioButtoValue = (id) => {
+        if (id === correctAnswer) {
+            alert('you are right');
+        }
+        else if (id !== correctAnswer) {
+            alert('you are wrong')
+        }
+
+    }
+
     return (
         <div className='quiz'>
             <div>
@@ -11,7 +22,8 @@ const EachQuestion = ({ Question }) => {
             </div>
             <div >
                 {
-                    options.map(option => <div className='options'> <input type="radio" id="html" name="fav_language" value={option} />{option}</div>)
+                    options.map(option => <div onClick={() => radioButtoValue(option)} className='options'> <input type="radio" id="html" name="fav_language" value={option} />{option}</div>)
+
 
 
                 }
