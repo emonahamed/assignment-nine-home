@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useLoaderData } from 'react-router-dom';
 import Header from '../Header/Header';
 
 const Statics = () => {
+    const statics = useLoaderData().data;
+    console.log(statics);
+
+    // console.log(sports);
+
     return (
         <div>
-            <Header></Header>
+
 
             <h4>this is statistics</h4>
         </div>

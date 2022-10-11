@@ -38,19 +38,23 @@ function App() {
         {
           path: '/quiz/:quizId',
           loader: async ({ params }) => {
-            const emon = params.quizId;
+
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
           },
           element: <QuizDetails></QuizDetails>
         },
+        {
+          path: '/statics',
+          loader: async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz');
+          },
+          element: <Statics></Statics>
+        },
+
 
       ]
     },
 
-    {
-      path: '/statics',
-      element: <Statics></Statics>
-    },
 
     {
       path: '*',
