@@ -11,7 +11,7 @@ const Statics = () => {
 
     return (
         <div>
-            <LineChart width={500} height={400} data={statics}>
+            <LineChart width={350} height={350} data={statics}>
                 <Line type="monotone" dataKey="total" stroke="#82ca9d" />
                 <XAxis dataKey="name" />
                 <YAxis />

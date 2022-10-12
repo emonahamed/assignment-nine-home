@@ -42,7 +42,7 @@ const EachQuestion = ({ Question, index }) => {
             <div >
 
                 {
-                    options.map(option => <div onClick={() => radioButtoValue(option)} className='options'><label>  <input type="radio" id="html" name={id} value={option} /> {option} </label> </div>)
+                    options.map(option => <div className='options'><label>  <input onClick={() => radioButtoValue(option)} type="radio" id="html" name={id} value={option} /> {option} </label> </div>)
 
                 }
                 {/* {
