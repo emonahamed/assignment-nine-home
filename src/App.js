@@ -55,7 +55,11 @@ function App() {
 
     {
       path: '*',
-      element: <div>this route is not found : 404</div>
+      element: <div className='error'><h2>
+        This route is not found <br />
+        <span className='color'> 404 :(</span>
+      </h2>
+      </div>
     }
 
 
