@@ -3,11 +3,11 @@ My project Overview :
 1.Project Name: QuizPlay
 2.Live Site LInk:  https://kaleidoscopic-kringle-cb5bdf.netlify.app
 3.Description:
-  “*” My website is a React Base Quiz Website . 
-  “*”You can check your knowledge by giving quiz And you will know the correct answer immediately.
-  “*”I have used react router also
-  “*”I have also used statistics and blog page.
-“*”Hope you will have a good experience if you visit my website.......
+  *  My website is a React Base Quiz Website . 
+  *  You can check your knowledge by giving quiz And you will know the correct answer immediately.
+  * I have used react router also
+ * I have also used statistics and blog page.
+Hope you will have a good experience if you visit my website.......
 
 <!----------------------------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------------------->
